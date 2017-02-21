@@ -1,0 +1,26 @@
+<ion-view title="我的信息">
+    <ion-content class="has-tabs" ng-controller="myRegInfoCtrl">
+        <div class="list card">
+            <ion-item class="assertive" ng-if="updated">
+               信息已修改
+            </ion-item>
+            <form name="updateUserForm" novalidate>
+                <label class="item item-input">
+                    <span class="input-label">ID：</span>{{loginId}}
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">昵称：</span>
+                    <input type="text" name="nk" placeholder="请输入昵称" ng-model="loginNk" required>
+                </label>
+                <label ng-messages="updateUserForm.nk.$dirty&&updateUserForm.nk.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入昵称
+                    </ion-item>
+                </label>
+                <button class="button button-full button-assertive" ng-disabled="updateUserForm.$pristine || updateUserForm.$invalid || loginNk==oldNk" ng-click="updateMyInfo()">
+                    保存修改
+                </button>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

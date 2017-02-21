@@ -1,0 +1,15 @@
+<ion-view view-title="我的报名">
+    <ion-content ng-controller="signInfoCtrl" class="has-tabs">
+        <ion-list>
+            <div class="card" ng-repeat="item in signInfo | orderBy:['childNk','-startDate']">
+                <div class="item">宝贝名字：{{item.childNk}}</div>
+                <div class="item">宝贝年龄：{{item.childAge}}</div>
+                <div class="item">报名课程：{{item.title}}</div>
+                <div class="item">课程价格：{{item.price | currency:'¥'}}</div>
+                <div class="item">课程课时：{{item.time}}</div>
+                <div class="item">开班日期：{{item.startDate | date:"yyyy年MM月dd日"}}</div>
+                <div class="item">报名日期：{{item.signDate | date:"yyyy年MM月dd日"}}</div>
+            </div>
+       </ion-list>
+    </ion-content>
+</ion-view>

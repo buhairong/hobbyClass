@@ -1,0 +1,478 @@
+[
+    {
+        "userId": "root",
+        "userPsd": "123456",
+        "userNk": "系统管理员",
+        "regDate": "2017-01-29T15:36:21.671Z",
+        "root": 0
+    },
+    {
+        "userId": "bu2",
+        "userPsd": "1234",
+        "userNk": "彬彬",
+        "regDate": "2017-02-05T07:16:04.370Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv7",
+        "userPsd": "1234",
+        "userNk": "buuv7",
+        "regDate": "2017-02-05T07:19:45.449Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv8",
+        "userPsd": "1234",
+        "userNk": "buuv8",
+        "regDate": "2017-02-05T07:19:47.446Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv9",
+        "userPsd": "1234",
+        "userNk": "buuv9",
+        "regDate": "2017-02-05T07:19:49.446Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv10",
+        "userPsd": "1234",
+        "userNk": "buuv10",
+        "regDate": "2017-02-05T07:19:51.449Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv11",
+        "userPsd": "1234",
+        "userNk": "buuv11",
+        "regDate": "2017-02-05T07:19:53.447Z",
+        "root": 100
+    },
+    {
+        "userId": "buuv12",
+        "userPsd": "1234",
+        "userNk": "buuv12",
+        "regDate": "2017-02-05T07:19:55.527Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu7",
+        "userPsd": "1234",
+        "userNk": "buuvbu7",
+        "regDate": "2017-02-05T07:21:28.198Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu8",
+        "userPsd": "1234",
+        "userNk": "buuvbu8",
+        "regDate": "2017-02-05T07:21:30.217Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu9",
+        "userPsd": "1234",
+        "userNk": "buuvbu9",
+        "regDate": "2017-02-05T07:21:32.196Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu10",
+        "userPsd": "1234",
+        "userNk": "buuvbu10",
+        "regDate": "2017-02-05T07:21:34.195Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu11",
+        "userPsd": "1234",
+        "userNk": "buuvbu11",
+        "regDate": "2017-02-05T07:21:36.250Z",
+        "root": 100
+    },
+    {
+        "userId": "buuvbu12",
+        "userPsd": "1234",
+        "userNk": "buuvbu12",
+        "regDate": "2017-02-05T07:21:38.196Z",
+        "root": 100
+    },
+    {
+        "userId": "bu13",
+        "userPsd": "1234",
+        "userNk": "bu13",
+        "regDate": "2017-02-05T07:24:59.646Z",
+        "root": 100
+    },
+    {
+        "userId": "bu14",
+        "userPsd": "1234",
+        "userNk": "bu14",
+        "regDate": "2017-02-05T07:25:01.638Z",
+        "root": 100
+    },
+    {
+        "userId": "bu15",
+        "userPsd": "1234",
+        "userNk": "bu15",
+        "regDate": "2017-02-05T07:25:03.653Z",
+        "root": 100
+    },
+    {
+        "userId": "bu16",
+        "userPsd": "1234",
+        "userNk": "bu16",
+        "regDate": "2017-02-05T07:25:05.637Z",
+        "root": 100
+    },
+    {
+        "userId": "bu17",
+        "userPsd": "1234",
+        "userNk": "bu17",
+        "regDate": "2017-02-05T07:25:07.648Z",
+        "root": 100
+    },
+    {
+        "userId": "bu18",
+        "userPsd": "1234",
+        "userNk": "bu18",
+        "regDate": "2017-02-05T07:25:09.753Z",
+        "root": 100
+    },
+    {
+        "userId": "bu19",
+        "userPsd": "1234",
+        "userNk": "bu19",
+        "regDate": "2017-02-05T07:26:35.402Z",
+        "root": 100
+    },
+    {
+        "userId": "bu20",
+        "userPsd": "1234",
+        "userNk": "bu20",
+        "regDate": "2017-02-05T07:26:37.407Z",
+        "root": 100
+    },
+    {
+        "userId": "bu21",
+        "userPsd": "1234",
+        "userNk": "bu21",
+        "regDate": "2017-02-05T07:26:39.404Z",
+        "root": 100
+    },
+    {
+        "userId": "bu22",
+        "userPsd": "1234",
+        "userNk": "bu22",
+        "regDate": "2017-02-05T07:26:41.405Z",
+        "root": 100
+    },
+    {
+        "userId": "bu23",
+        "userPsd": "1234",
+        "userNk": "bu23",
+        "regDate": "2017-02-05T07:26:43.406Z",
+        "root": 100
+    },
+    {
+        "userId": "bu24",
+        "userPsd": "1234",
+        "userNk": "bu24",
+        "regDate": "2017-02-05T07:26:45.404Z",
+        "root": 100
+    },
+    {
+        "userId": "bu25",
+        "userPsd": "1234",
+        "userNk": "bu25",
+        "regDate": "2017-02-05T07:28:47.687Z",
+        "root": 100
+    },
+    {
+        "userId": "bu26",
+        "userPsd": "1234",
+        "userNk": "bu26",
+        "regDate": "2017-02-05T07:28:49.697Z",
+        "root": 100
+    },
+    {
+        "userId": "bu27",
+        "userPsd": "1234",
+        "userNk": "bu27",
+        "regDate": "2017-02-05T07:28:51.691Z",
+        "root": 100
+    },
+    {
+        "userId": "bu28",
+        "userPsd": "1234",
+        "userNk": "bu28",
+        "regDate": "2017-02-05T07:28:53.692Z",
+        "root": 100
+    },
+    {
+        "userId": "bu29",
+        "userPsd": "1234",
+        "userNk": "bu29",
+        "regDate": "2017-02-05T07:28:55.688Z",
+        "root": 100
+    },
+    {
+        "userId": "bu30",
+        "userPsd": "1234",
+        "userNk": "bu30",
+        "regDate": "2017-02-05T07:28:57.774Z",
+        "root": 100
+    },
+    {
+        "userId": "bu31",
+        "userPsd": "1234",
+        "userNk": "bu31",
+        "regDate": "2017-02-05T07:34:22.277Z",
+        "root": 100
+    },
+    {
+        "userId": "bu32",
+        "userPsd": "1234",
+        "userNk": "bu32",
+        "regDate": "2017-02-05T07:34:24.268Z",
+        "root": 100
+    },
+    {
+        "userId": "bu33",
+        "userPsd": "1234",
+        "userNk": "bu33",
+        "regDate": "2017-02-05T07:34:26.264Z",
+        "root": 100
+    },
+    {
+        "userId": "bu34",
+        "userPsd": "1234",
+        "userNk": "bu34",
+        "regDate": "2017-02-05T07:34:28.263Z",
+        "root": 100
+    },
+    {
+        "userId": "bu35",
+        "userPsd": "1234",
+        "userNk": "bu35",
+        "regDate": "2017-02-05T07:34:30.266Z",
+        "root": 100
+    },
+    {
+        "userId": "bu36",
+        "userPsd": "1234",
+        "userNk": "bu36",
+        "regDate": "2017-02-05T07:34:32.269Z",
+        "root": 100
+    },
+    {
+        "userId": "bu37",
+        "userPsd": "1234",
+        "userNk": "bu37",
+        "regDate": "2017-02-05T07:36:15.061Z",
+        "root": 100
+    },
+    {
+        "userId": "bu38",
+        "userPsd": "1234",
+        "userNk": "bu38",
+        "regDate": "2017-02-05T07:36:17.053Z",
+        "root": 100
+    },
+    {
+        "userId": "bu39",
+        "userPsd": "1234",
+        "userNk": "bu39",
+        "regDate": "2017-02-05T07:36:19.057Z",
+        "root": 100
+    },
+    {
+        "userId": "bu40",
+        "userPsd": "1234",
+        "userNk": "bu40",
+        "regDate": "2017-02-05T07:36:21.063Z",
+        "root": 100
+    },
+    {
+        "userId": "bu41",
+        "userPsd": "1234",
+        "userNk": "bu41",
+        "regDate": "2017-02-05T07:36:23.051Z",
+        "root": 100
+    },
+    {
+        "userId": "bu42",
+        "userPsd": "1234",
+        "userNk": "bu42",
+        "regDate": "2017-02-05T07:36:25.050Z",
+        "root": 100
+    },
+    {
+        "userId": "buub43",
+        "userPsd": "1234",
+        "userNk": "buub43",
+        "regDate": "2017-02-05T07:46:28.085Z",
+        "root": 100
+    },
+    {
+        "userId": "buub44",
+        "userPsd": "1234",
+        "userNk": "buub44",
+        "regDate": "2017-02-05T07:46:30.117Z",
+        "root": 100
+    },
+    {
+        "userId": "buub45",
+        "userPsd": "1234",
+        "userNk": "buub45",
+        "regDate": "2017-02-05T07:46:32.083Z",
+        "root": 100
+    },
+    {
+        "userId": "buub46",
+        "userPsd": "1234",
+        "userNk": "buub46",
+        "regDate": "2017-02-05T07:46:34.083Z",
+        "root": 100
+    },
+    {
+        "userId": "buub47",
+        "userPsd": "1234",
+        "userNk": "buub47",
+        "regDate": "2017-02-05T07:46:36.083Z",
+        "root": 100
+    },
+    {
+        "userId": "buub48",
+        "userPsd": "1234",
+        "userNk": "buub48",
+        "regDate": "2017-02-05T07:46:38.085Z",
+        "root": 100
+    },
+    {
+        "userId": "buub49",
+        "userPsd": "1234",
+        "userNk": "buub49",
+        "regDate": "2017-02-05T07:49:32.393Z",
+        "root": 100
+    },
+    {
+        "userId": "buub50",
+        "userPsd": "1234",
+        "userNk": "buub50",
+        "regDate": "2017-02-05T07:49:34.395Z",
+        "root": 100
+    },
+    {
+        "userId": "buub51",
+        "userPsd": "1234",
+        "userNk": "buub51",
+        "regDate": "2017-02-05T07:49:36.395Z",
+        "root": 100
+    },
+    {
+        "userId": "buub52",
+        "userPsd": "1234",
+        "userNk": "buub52",
+        "regDate": "2017-02-05T07:49:38.400Z",
+        "root": 100
+    },
+    {
+        "userId": "buub53",
+        "userPsd": "1234",
+        "userNk": "buub53",
+        "regDate": "2017-02-05T07:49:40.394Z",
+        "root": 100
+    },
+    {
+        "userId": "buub54",
+        "userPsd": "1234",
+        "userNk": "buub54",
+        "regDate": "2017-02-05T07:49:42.396Z",
+        "root": 100
+    },
+    {
+        "userId": "buub55",
+        "userPsd": "1234",
+        "userNk": "buub55",
+        "regDate": "2017-02-05T07:51:40.422Z",
+        "root": 100
+    },
+    {
+        "userId": "buub56",
+        "userPsd": "1234",
+        "userNk": "buub56",
+        "regDate": "2017-02-05T07:53:40.079Z",
+        "root": 100
+    },
+    {
+        "userId": "buub57",
+        "userPsd": "1234",
+        "userNk": "buub57",
+        "regDate": "2017-02-05T07:53:42.082Z",
+        "root": 100
+    },
+    {
+        "userId": "buub58",
+        "userPsd": "1234",
+        "userNk": "buub58",
+        "regDate": "2017-02-05T07:53:44.076Z",
+        "root": 100
+    },
+    {
+        "userId": "buub59",
+        "userPsd": "1234",
+        "userNk": "buub59",
+        "regDate": "2017-02-05T07:53:46.285Z",
+        "root": 100
+    },
+    {
+        "userId": "buub60",
+        "userPsd": "1234",
+        "userNk": "buub60",
+        "regDate": "2017-02-05T07:53:48.083Z",
+        "root": 100
+    },
+    {
+        "userId": "buub61",
+        "userPsd": "1234",
+        "userNk": "buub61",
+        "regDate": "2017-02-05T07:53:50.081Z",
+        "root": 100
+    },
+    {
+        "userId": "bu",
+        "userPsd": "1234",
+        "userNk": "bu",
+        "regDate": "2017-02-05T08:17:16.572Z",
+        "root": 1
+    },
+    {
+        "userId": "bu11",
+        "userPsd": "1234",
+        "userNk": "bu11",
+        "regDate": "2017-02-05T08:17:43.227Z",
+        "root": 1
+    },
+    {
+        "userId": "buuu",
+        "userPsd": "buuu",
+        "userNk": "buuu",
+        "regDate": "2017-02-06T03:02:29.137Z",
+        "root": 100
+    },
+    {
+        "userId": "buu11",
+        "userPsd": "1234",
+        "userNk": "buu11",
+        "regDate": "2017-02-06T03:12:41.823Z",
+        "root": 100
+    },
+    {
+        "userId": "buuuub",
+        "userPsd": "123456",
+        "userNk": "abcdefg",
+        "regDate": "2017-02-06T03:31:19.608Z",
+        "root": 100
+    }
+]

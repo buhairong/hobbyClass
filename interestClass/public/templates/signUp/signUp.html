@@ -1,0 +1,49 @@
+<ion-view view-title="课程报名">
+    <ion-content ng-controller="signUpCtrl" class="has-tabs">
+        <form name="signUpForm" novalidate>
+            <ion-list>
+                <label class="item calm-bg light" align="center">
+                    {{loginNk}},欢迎报名课程
+                </label>
+                <ion-item class="assertive" ng-if="msg">
+                    {{msg}}
+                </ion-item>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>宝贝名字：</span>
+                    <input type="text" name="nk" placeholder="请输入宝贝名字" ng-model="nk" required>
+                </label>
+                <label ng-messages="signUpForm.nk.$dirty&&signUpForm.nk.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入宝贝名字
+                    </ion-item>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label"><em class="assertive">*</em>宝贝年龄：</span>
+                    <select name="age" ng-model="age" ng-options="age.age as age.age for age in ages" required></select> 岁
+                </label>
+                <label ng-messages="signUpForm.age.$dirty&&signUpForm.age.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请选择宝贝年龄
+                    </ion-item>
+                </label>
+                <label class="item">
+                    兴趣班:{{newClass.hobby.title}}
+                </label>
+                <label class="item">
+                    价格:{{newClass.hobby.price | currency:"¥"}}
+                </label>
+                <label class="item">
+                    课时:{{newClass.hobby.time}}
+                </label>
+                <label class="item">
+                    开班日期:{{newClass.startDate}}
+                </label>
+                <button class="button button-full button-assertive"
+                        ng-disabled="signUpForm.$invalid"
+                        ng-click="signUp()">
+                    报名
+                </button>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>

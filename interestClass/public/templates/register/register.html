@@ -1,0 +1,62 @@
+<ion-view view-title="注册页面">
+    <ion-content ng-controller="registerCtrl">
+        <form name="registerForm" novalidate>
+            <ion-list>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>账号：</span>
+                    <input type="text" name="loginId" placeholder="  账号/手机/邮箱"
+                           ng-model="loginId" ng-keyup="validLoginId()" required>
+                </label>
+                <label ng-if="idErr">
+                    <ion-item class="assertive item-text-wrap" align="center">
+                        账号已经存在
+                    </ion-item>
+                </label>
+                <label ng-messages="registerForm.loginId.$dirty&&registerForm.loginId.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入账号
+                    </ion-item>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>昵称：</span>
+                    <input type="text" name="nk" placeholder="请输入昵称" ng-model="nk" required>
+                </label>
+                <label ng-messages="registerForm.nk.$dirty&&registerForm.nk.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入昵称
+                    </ion-item>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>密码：</span>
+                    <input type="password" name="password" placeholder="请输入密码"
+                           ng-model="password" ng-keyup="validPsd()" required>
+                </label>
+                <label ng-messages="registerForm.password.$dirty&&registerForm.password.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入密码
+                    </ion-item>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>再次输入密码：</span>
+                    <input type="password" name="againPsd" placeholder="请再次输入密码"
+                           ng-model="againPsd" ng-keyup="validPsd()" required>
+                </label>
+                <label ng-messages="registerForm.againPsd.$dirty&&registerForm.againPsd.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请再次输入密码
+                    </ion-item>
+                </label>
+                <label ng-if="psdErr">
+                    <ion-item class="assertive item-text-wrap" align="center">
+                        两次密码输入不一致
+                    </ion-item>
+                </label>
+                <button class="button button-full button-assertive"
+                        ng-disabled="registerForm.$invalid||idErr||psdErr"
+                        ng-click="register()">
+                    注册
+                </button>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>

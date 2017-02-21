@@ -1,0 +1,57 @@
+[
+  {
+    "classId": 1,
+    "hobbyId": 1,
+    "startDate": "2017年02月15日"
+  },
+  {
+    "classId": 2,
+    "hobbyId": 1,
+    "startDate": "2017年03月15日"
+  },
+  {
+    "classId": 3,
+    "hobbyId": 2,
+    "startDate": "2017年02月15日"
+  },
+  {
+    "classId": 4,
+    "hobbyId": 2,
+    "startDate": "2017年03月16日"
+  },
+  {
+    "classId": 5,
+    "hobbyId": 3,
+    "startDate": "2017年03月17日"
+  },
+  {
+    "classId": 6,
+    "hobbyId": 4,
+    "startDate": "2017年03月12日"
+  },
+  {
+    "classId": 7,
+    "hobbyId": 6,
+    "startDate": "2017年03月11日"
+  },
+  {
+    "classId": 8,
+    "hobbyId": 1,
+    "startDate": "2017年03月12日"
+  },
+  {
+    "classId": 9,
+    "hobbyId": 1,
+    "startDate": "2017年02月07日"
+  },
+  {
+    "classId": 10,
+    "hobbyId": 2,
+    "startDate": "2017年02月09日"
+  },
+  {
+    "classId": 11,
+    "hobbyId": 2,
+    "startDate": "2017年02月10日"
+  }
+]

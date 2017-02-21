@@ -1,0 +1,103 @@
+<ion-view hide-back-button="true" hide-nav-bar="true" ng-controller="interestClassListCtrl">
+    <div class="bar bar-header bar-assertive item-input-inset">
+        <span class="title-left">无忧儿童兴趣班</span>
+        <label class="item-input-wrapper">
+            <input type="search" placeholder="请输入搜索关键字">
+            <a href="#"><i class="icon ion-search placeholder-icon"></i></a>
+        </label>
+        <span class="title-right" ui-sref="login" ng-if="!userId">登录</span>
+        <span class="title-right" ng-if="userId">{{userNk}}</span>
+    </div>
+    <ion-content class="has-tabs has-header">
+        <ion-item ng-if="root==0">
+            <a class="button button-assertive" href="#/usersList">用户管理</a>
+        </ion-item>
+        <ion-slide-box does-continue="true" auto-play="true" id="homeSlide">
+            <ion-slide>
+                <div class="box"><img src="images/slide1.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/slide2.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/slide3.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/slide4.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/slide5.jpg"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <!--<ion-item class="dark-bg light" align="center">新增兴趣班</ion-item>
+        <form class="list card" name="addHobbyForm" novalidate>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>兴趣班名称：</span>
+                <input type="text" name="newHobbyName" ng-model="newHobbyName" ng-keyup="validHobbyName()" required>
+            </label>
+            <label ng-if="hobbyNameErr">
+                <ion-item class="assertive item-text-wrap" align="center">
+                    该兴趣班已开设
+                </ion-item>
+            </label>
+            <label ng-messages="addHobbyForm.newHobbyName.$dirty&&addHobbyForm.newHobbyName.$error">
+                <ion-item class="assertive" align="center" ng-message="required">
+                    请输入兴趣班名称
+                </ion-item>
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>课时：</span>
+                <input type="number" name="newHobbyTime" ng-model="newHobbyTime" required>
+            </label>
+            <label ng-messages="addHobbyForm.newHobbyTime.$dirty&&addHobbyForm.newHobbyTime.$error">
+                <ion-item class="assertive" align="center" ng-message="required">
+                    请输入课时
+                </ion-item>
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>价格：</span>
+                <input type="number" name="newHobbyPrice" ng-model="newHobbyPrice" required>
+            </label>
+            <label ng-messages="addHobbyForm.newUserNk.$dirty&&addHobbyForm.newUserNk.$error">
+                <ion-item class="assertive" align="center" ng-message="required">
+                    请输入价格
+                </ion-item>
+            </label>
+            <label class="item item-input">
+                <span><em class="assertive">*</em>上传图片：</span>
+                <input type="file" file-model="hobbyImg">
+            </label>
+
+            <label class="item item-input item-stacked-label">
+                <span class="input-label"><em class="assertive">*</em>课程描述：</span>
+                <textarea rows="10" name="newHobbyDesc" ng-model="newHobbyDesc"  required></textarea>
+            </label>
+            <label ng-messages="addHobbyForm.newHobbyDesc.$dirty&&addHobbyForm.newHobbyDesc.$error">
+                <ion-item class="assertive" align="center" ng-message="required">
+                    请对课程进行描述
+                </ion-item>
+            </label>
+            <ion-item align="center">
+                <a class="button button-full button-assertive" ng-disabled="addUserForm.$invalid || hobbyNameErr" ng-click="addHobby()">新增课程</a>
+            </ion-item>
+        </form>-->
+        <ion-item class="dark-bg light" align="center">兴趣班一览</ion-item>
+        <ion-list class="interestClassList">
+            <div class="card" ng-repeat="item in classes" href="#/interestClass?classId={{item.hobbyId}}">
+                <div class="item" align="center"><strong>{{item.title}}</strong></div>
+                <div class="item item-image"><img src="images/{{item.imgsrc}}"></div>
+                <h6>价格：{{item.price | currency:'¥'}}</h6>
+                <h6>课时：{{item.time}}</h6>
+                <p>{{item.desc}}</p>
+            </div>
+            <ion-infinite-scroll on-infinite="loadInterestClass()" ng-if="!flag"></ion-infinite-scroll>
+            <ion-item class="item-stable" align="center" ng-if="onRefresh">
+                正在加载
+            </ion-item>
+            <ion-item class="item-dark" align="center" ng-if="flag && classNum>num">
+                已经到最底了
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <div class="top" ng-click="top()">top</div>
+</ion-view>

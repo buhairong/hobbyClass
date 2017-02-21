@@ -1,0 +1,115 @@
+<ion-view view-title="用户管理页面">
+    <ion-content class="has-tabs" ng-controller="usersListCtrl">
+        <ion-item class="dark-bg light" align="center">新增用户</ion-item>
+        <form class="list card" name="addUserForm" novalidate>
+        <label class="item item-input">
+            <span class="input-label"><em class="assertive">*</em>用户ID：</span>
+            <input type="text" name="newUserId" ng-model="newUserId" ng-keyup="validLoginId()" required>
+        </label>
+        <label ng-if="idErr">
+            <ion-item class="assertive item-text-wrap" align="center">
+                账号已经存在
+            </ion-item>
+        </label>
+        <label ng-messages="addUserForm.newUserId.$dirty&&addUserForm.newUserId.$error">
+            <ion-item class="assertive" align="center" ng-message="required">
+                请输入账号
+            </ion-item>
+        </label>
+        <label class="item item-input">
+            <span class="input-label"><em class="assertive">*</em>用户密码：</span>
+            <input type="password" name="newUserPsd" ng-model="newUserPsd" required>
+        </label>
+        <label ng-messages="addUserForm.newUserPsd.$dirty&&addUserForm.newUserPsd.$error">
+            <ion-item class="assertive" align="center" ng-message="required">
+                请输入密码
+            </ion-item>
+        </label>
+        <label class="item item-input">
+            <span class="input-label"><em class="assertive">*</em>用户昵称：</span>
+            <input type="text" name="newUserNk" ng-model="newUserNk" required>
+        </label>
+        <label ng-messages="addUserForm.newUserNk.$dirty&&addUserForm.newUserNk.$error">
+            <ion-item class="assertive" align="center" ng-message="required">
+                请输入昵称
+            </ion-item>
+        </label>
+        <label class="item item-input">
+            <span class="input-label"><em class="assertive">*</em>用户权限：</span>
+            <select name="newUserRoot" ng-model="newUserRoot" ng-options="root.id as root.name for root in roots" required></select>
+        </label>
+        <label ng-messages="addUserForm.newUserRoot.$dirty&&addUserForm.newUserRoot.$error">
+            <ion-item class="assertive" align="center" ng-message="required">
+                请分配权限
+            </ion-item>
+        </label>
+        <ion-item align="center">
+            <a class="button button-full button-assertive" ng-disabled="addUserForm.$invalid||idErr" ng-click="addUser()">新增用户</a>
+        </ion-item>
+    </form>
+        <ion-item class="dark-bg light" align="center">搜索用户</ion-item>
+        <form class="list card" name="searchUserForm">
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户ID：</span>
+                <input type="text" name="searchUserId" ng-model="searchUserId" ng-keyup="searchUser()">
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户昵称：</span>
+                <input type="text" name="searchUserNk" ng-model="searchUserNk" ng-keyup="searchUser()">
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户权限：</span>
+                <select name="searchUserRoot" ng-model="searchUserRoot" ng-options="root.id as root.name for root in roots" ng-change="searchUser()">
+                    <option value=""></option>
+                </select>
+            </label>
+            <ion-item align="center">
+                <a class="button button-full button-assertive" ng-click="searchUser()">搜索</a>
+            </ion-item>
+        </form>
+        <ion-item class="dark-bg light" align="center">用户列表</ion-item>
+       <form class="list card" name="userForm" novalidate ng-repeat="user in users">
+            <label class="item item-input">
+                <span class="input-label">用户ID：</span>{{user.userId}}
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户密码：</span>
+                <input type="text" name="userPsd" ng-model="user.userPsd" required>
+            </label>
+           <label ng-messages="userForm.userPsd.$dirty&&userForm.userPsd.$error">
+               <ion-item class="assertive" align="center" ng-message="required">
+                   请输入密码
+               </ion-item>
+           </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户昵称：</span>
+                <input type="text" name="userNk" ng-model="user.userNk" required>
+            </label>
+           <label ng-messages="userForm.userNk.$dirty&&userForm.userNk.$error">
+               <ion-item class="assertive" align="center" ng-message="required">
+                   请输入昵称
+               </ion-item>
+           </label>
+            <label class="item item-input">
+                <span class="input-label"><em class="assertive">*</em>用户权限：</span>
+                <select ng-model="user.root" name="root" ng-options="root.id as root.name for root in roots" required></select>
+            </label>
+           <label ng-messages="userForm.root.$dirty&&userForm.root.$error">
+               <ion-item class="assertive" align="center" ng-message="required">
+                   请分配权限
+               </ion-item>
+           </label>
+            <label class="item item-input">
+                <span class="input-label">注册日期：</span>{{user.regDate | date:"yyyy-MM-dd HH:mm:ss"}}
+            </label>
+            <ion-item class="row" align="center">
+                <div class="col-50"><a class="button button-assertive" ng-disabled="userForm.$invalid" ng-click="updateUser(user)">保存修改</a></div>
+                <div class="col-50"><a class="button button-assertive" ng-click="delUser(user.userId)">删除此用户</a></div>
+            </ion-item>
+        </form>
+        <ul uib-pagination total-items="pageNums" ng-model="$parent.currentPage" max-size="maxSize" items-per-page="pageSize"
+            class="pagination-sm pull-right" previous-text="上一页" next-text="下一页" first-text="首页"
+            last-text="尾页" boundary-links="true" boundary-link-numbers="true" num-pages="smallnumPages" ng-change="searchUser()" ng-if="pageNums>pageSize"></ul>
+    </ion-content>
+
+</ion-view>

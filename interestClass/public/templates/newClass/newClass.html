@@ -1,0 +1,17 @@
+<ion-view title="最近开班">
+    <ion-content class="has-tabs">
+        <ion-list>
+            <ion-refresher pulling-text="正在加载..." pulling-icon="ion-load-d" on-pulling="doRefresh()"></ion-refresher>
+            <ion-item collection-repeat="item in newClass | orderBy:['startDate']">
+                <h2><strong>{{item.hobby.title}}</strong></h2>
+                <h3>价格：{{item.hobby.price | currency:'¥'}}</h3>
+                <h3>课时：{{item.hobby.time}}</h3>
+                <h3>开班时间：{{item.startDate}}</h3>
+                <a class="button button-assertive" ng-click="signUp(item)">
+                    我要报名
+                </a>
+            </ion-item>
+          </ion-list>
+    </ion-content>
+    <div class="top" ng-click="top()">top</div>
+</ion-view>

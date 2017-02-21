@@ -1,0 +1,54 @@
+<ion-view title="修改密码">
+    <ion-content class="has-tabs" ng-controller="updatePsdCtrl">
+        <div class="list card">
+            <ion-item class="assertive" ng-if="updated">
+                密码已修改
+            </ion-item>
+            <label ng-if="hasError">
+                <ion-item class="assertive item-text-wrap">
+                    密码错误，请检查大小写是否错误
+                </ion-item>
+            </label>
+            <form name="updatePsdForm" novalidate>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>原密码：</span>
+                    <input type="password" name="userPsd" placeholder="请输入原密码"
+                           ng-model="userPsd" required>
+                </label>
+                <label ng-messages="updatePsdForm.userPsd.$dirty&&updatePsdForm.userPsd.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入原密码
+                    </ion-item>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>新密码：</span>
+                    <input type="password" name="password" placeholder="请输入新密码"
+                           ng-model="password" ng-keyup="validPsd()" required>
+                </label>
+                <label ng-messages="updatePsdForm.password.$dirty&&updatePsdForm.password.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请输入新密码
+                    </ion-item>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label"><em class="assertive">*</em>再次输入新密码：</span>
+                    <input type="password" name="againPsd" placeholder="请再次输入新密码"
+                           ng-model="againPsd" ng-keyup="validPsd()" required>
+                </label>
+                <label ng-messages="registerForm.againPsd.$dirty&&registerForm.againPsd.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">
+                        请再次输入新密码
+                    </ion-item>
+                </label>
+                <label ng-if="psdErr">
+                    <ion-item class="assertive item-text-wrap" align="center">
+                        两次密码输入不一致
+                    </ion-item>
+                </label>
+                <button class="button button-full button-assertive" ng-disabled="updatePsdForm.$invalid||psdErr" ng-click="updateMyInfo()">
+                    保存修改
+                </button>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

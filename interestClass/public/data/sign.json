@@ -1,0 +1,51 @@
+[
+    {
+        "userId": "bu2",
+        "childNk": "彬彬",
+        "childAge": 7,
+        "classId": 3,
+        "signDate": "2017-02-10T13:25:42.279Z"
+    },
+    {
+        "userId": "bu2",
+        "childNk": "aa",
+        "childAge": 6,
+        "classId": 3,
+        "signDate": "2017-02-10T13:33:03.338Z"
+    },
+    {
+        "userId": "bu2",
+        "childNk": "彬彬",
+        "childAge": 7,
+        "classId": 7,
+        "signDate": "2017-02-10T13:52:46.198Z"
+    },
+    {
+        "userId": "bu2",
+        "childNk": "aa",
+        "childAge": 6,
+        "classId": 7,
+        "signDate": "2017-02-10T13:52:46.198Z"
+    },
+    {
+        "userId": "bu2",
+        "childNk": "彬彬",
+        "childAge": 7,
+        "classId": 6,
+        "signDate": "2017-02-10T13:53:05.175Z"
+    },
+    {
+        "userId": "buuv7",
+        "childNk": "aa",
+        "childAge": 7,
+        "classId": 7,
+        "signDate": "2017-02-10T13:52:46.198Z"
+    },
+    {
+        "userId": "buuv7",
+        "childNk": "彬彬",
+        "childAge": 7,
+        "classId": 6,
+        "signDate": "2017-02-10T13:53:05.175Z"
+    }
+]

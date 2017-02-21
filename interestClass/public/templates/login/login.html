@@ -1,0 +1,30 @@
+<ion-view view-title="登录页面">
+    <ion-content ng-controller="loginCtrl">
+        <form name="loginForm" novalidate>
+            <ion-list>
+                <label ng-if="hasError">
+                    <ion-item class="assertive item-text-wrap" align="center">
+                        账号或密码错误，请检查大小写是否错误
+                    </ion-item>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">账号：</span>
+                    <input type="text" name="loginId" placeholder="账号/手机/邮箱" ng-model="loginId" required>
+                </label>
+                <label ng-messages="loginForm.loginId.$dirty&&loginForm.loginId.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">请输入账号</ion-item>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">密码：</span>
+                    <input type="password" name="userPsd" placeholder="请输入密码" ng-model="userPsd" required>
+                </label>
+                <label ng-messages="loginForm.userPsd.$dirty&&loginForm.userPsd.$error">
+                    <ion-item class="assertive" align="center" ng-message="required">请输入密码</ion-item>
+                </label>
+                <button class="button button-full button-assertive" ng-disabled="loginForm.$invalid"
+                        ng-click="login()">登录</button>
+                <button class="button button-full button-assertive" ui-sref="register">注册</button>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>
